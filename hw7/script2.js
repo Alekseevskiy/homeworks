@@ -1,11 +1,14 @@
-function copy (target, origin) {
+function aaaaa (first, second) {
     let origin = {
         name: "Aleksey",
-        age: 25,
         surname: "Alekseevskiy",
+        age: 25,
     }
-    // let target = origin;
-    for (let target in origin) {
-        alert (origin [target])
+    
+    let copy = {};
+    
+    for (let key in origin) {
+        copy[key] = origin[key];
     }
-}
+}console.log (aaaaa);
+
