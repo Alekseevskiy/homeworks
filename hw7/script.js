@@ -1,19 +1,24 @@
 let user = {
-    name: prompt ("name first?"),
-    age: +prompt ("age first?"),
+  name: "Aleksey",
+  surname: "Alekseevskiy",
+  age: 25
 };
+
 let user2 = {
-    name: prompt ("name second?"),
-    age: +prompt ("age second?"),
+  name: "Aleksey",
+  surname: "Alekseevskiy",
+  age: 25
 };
 
-function comparison (first, second) {
-    return user.name === user2.name && user.age ===user2.age 
-}
+function reception(first, second) {
+  for (let key in first) {
+    if (first[key] !== second[key]) {
+      return false;
+    }
+  }
 
-let result = comparison (user, user2);
-if (result) {
-    console.log ("TRUE");
-} else {
-    console.log ("false");
+  return true;
 }
+console.log(reception(user, user2));
+
+
