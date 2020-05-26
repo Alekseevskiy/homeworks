@@ -1,59 +1,88 @@
 const ar = [1, 2, 3, 4, 5];
 
 
-
-function forEach (ar, callback) {
-    for (i = 0; i < ar; i++);
-    callback(i);
-}
-
-
-
-function map(ar, callback) {
-    for (i = 0; i < ar; i++);
-    return callback + 5
-}
-
-const a = ar.map(map);
-
-console.log(a);
-
-
-
-function filter (ar, callback) {
-    for (i = 0; i < ar; i++);
-    if (i >= 1) {
-        return callback;
+function callback(element) {
+    console.log(element);
+  }
+  
+  function forEach(ar, cb) {
+    for (let i = 0; i < ar.length; i++) {
+      cb(ar[i]);
     }
-
-}
-
-const b = ar.filter(filter);
-
-console.log (b)
+  }
+  
+  forEach([ar], callback)
 
 
-
-function some(ar, callback) {
-    for (i = 0; i < ar; i++);
-    if (i / ar === 1) {
-        return callback
-    }
-}
-
-const c = ar.some(some);
-
-console.log (c);
+// function map
 
 
+// function callback (arg) {
+//     return arg - 5;
+// }
 
-function every(ar, callback) {
-    for (i = 0; i < ar; i++);
-    if (i === 1) {
-        return callback
-    }
-}
+// function map (ar, cb) {
+//     const a = [];
+//     for( let i = 0; i < ar.length; i++) {
+//         const result = cb(ar[i]);
+//         a.push(result)
+//     } return a;
+// }
 
-const d = ar.every(every); 
+// console.log (map([1,2,3,4,5,6,7,8], callback))
 
-console.log (d)
+
+// function filter
+
+
+// function callback(el) {
+//     if (el.length > 5)
+//         return true;
+//     else
+//         return false;
+// }
+
+// function filter(ar, cb) {
+//     let a =[];
+//     for (let i = 0; i < ar.length; i++) {
+//         if(cb(ar[i]))a.push(ar[i]);
+//     }
+//     return a;
+// }
+// console.log(filter(["Aleksey", "Tom", "Jerry", "Kolya"], callback));
+
+// function some
+
+// function callback (el) {
+//     if (el > 1) 
+//         return true; 
+//         else 
+//         return false;
+// }
+
+// function some (ar, cb) {
+//     let a = [];
+//     for (let i = 0; i < ar.length; i++) {
+//         if (cb(ar[i])) return true;
+//     } return false
+// }
+// console.log (some(ar, callback))
+
+
+// function every
+
+
+// function callback (el) {
+//     if (el > 3) 
+//     return true;
+//     else
+//     return false
+// }
+
+
+// function every (ar, cb) {
+//     let a = [];
+//     for (let i = 0; i < ar.length; i++) {
+//         if (!cb(ar[i])) return false
+//     } return true
+// }   console.log (every(ar, callback))
