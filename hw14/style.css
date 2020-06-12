@@ -1,0 +1,40 @@
+.wrapper {
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    margin-left: 15px;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid black;
+}
+
+.plus {
+    margin-top: 15px;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.pink {
+    background-color: pink;
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+.li {
+    border: 1px solid black;
+    height: 50px;
+    list-style: none;
+}
+
+.bg {
+    background-color: rgb(112, 230, 194);
+}
