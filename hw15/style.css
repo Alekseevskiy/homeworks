@@ -1,0 +1,22 @@
+.form {
+    border: 1px solid black;
+    padding: 100px;
+}
+
+.window {
+    margin-left: 10px;
+}
+
+.valid {
+    background-color: green;
+    color: white;
+}
+
+.invalid {
+    background-color: red;
+    color: white;
+}
+
+.div {
+    text-align: center;
+}
